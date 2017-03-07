@@ -7,10 +7,10 @@ title: Hello,World!
 <h3>代码规范</h3>
 <ul>
     {% for post in site.posts %}
-        <li>{{ post.date| date_to_string}}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>---作者：{{ post.author }}</li>
-
     {% if post.category == 'standard' %}
-    Hello tobi
+    <li>{{ post.date| date_to_string}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>---作者：{{
+        post.author }}
+    </li>
     {% endif %}
     {% endfor %}
 </ul>
