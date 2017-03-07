@@ -7,7 +7,7 @@ title: Hello,World!
 <h3>代码规范</h3>
 <ul>
     {% for norm in site.norms %}
-    <li>{{ post.date}} <a href="{{ site.baseurl }}{{ norm.url }}">{{ post.title }}</a>---作者：{{post.author}}</li>
+    <li>{{ norm.date}} <a href="{{ site.baseurl }}{{ norm.url }}">{{ norm.title }}</a>---作者：{{norm.author}}</li>
     {% endfor %}
 </ul>
 <h3>下面是文章的列表</h3>
