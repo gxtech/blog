@@ -7,9 +7,9 @@ title: Hello,World!
 <h3>代码规范</h3>
 <ul>
     {% for post in site.posts %}
-    { % if post.category== 'standard' % }
-    <li>{{ post.date}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>---作者：{{post.author}}</li>
-    { % endif % }
+        {% if post.category == 'standard' %}
+        <li>{{ post.date}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>---作者：{{post.author}}</li>
+        {% endif %}
     {% endfor %}
 </ul>
 <h3>下面是文章的列表</h3>
