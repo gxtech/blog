@@ -8,6 +8,10 @@ title: Hello,World!
 <ul>
     {% for post in site.posts %}
         <li>{{ post.date| date_to_string}}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>---作者：{{ post.author }}</li>
+
+    {% if post.category == 'standard' %}
+    Hello tobi
+    {% endif %}
     {% endfor %}
 </ul>
 <h3>下面是文章的列表</h3>
