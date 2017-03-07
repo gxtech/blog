@@ -2,3 +2,6 @@ theme: jekyll-theme-modernist
 baseurl: /blog
 title: "高信学习交流部落格"
 description: "这里是小知识和小技巧的累计"
+markdown: redcarpet
+safe: false
+pygments: true
