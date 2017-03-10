@@ -17,7 +17,10 @@ title: Hello,World!
 <h3>下面是文章的列表</h3>
 <ul>
     {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>---作者：{{post.author}}
+    {% if post.category == 'knowledge' %}
+    <li>{{ post.date| date_to_string}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>---作者：{{
+        post.author }}
     </li>
+    {% endif %}
     {% endfor %}
 </ul>
